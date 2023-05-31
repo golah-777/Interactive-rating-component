@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap');
+
+*{
+  margin: 0;
+}
+
+body{
+  background-color: hsl(216, 12%, 8%);
+  font-family: 'Overpass', sans-serif;
+  color: white;
+}
+
+
+
+#main-page{
+  width: 300px;
+  background-color:#1f2630;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  border-radius: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+p{
+  font-size: 13px;
+  line-height: 22px;
+}
+
+h3{
+  padding: 15px 0px;
+}
+
+.rating-numbers{
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.rating-numbers button{
+ width: 40px;
+ height: 40px;
+ border-radius: 50%;
+ border: 0;
+ background-color: hsl(213, 19%, 18%);
+ color: hsl(217, 12%, 63%);
+ padding: 10px;
+ margin: 20px 10px 20px 0px;
+}
+
+#rate-el:hover{
+ opacity: 0.5;
+}
+
+.star{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 0;
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(217, 12%, 63%);
+  padding: 10px;
+  margin: 0px 0px 10px 0px;
+}
+ 
+svg{
+  background-color: transparent;
+}
+
+#submit-el{
+  width:100%;
+  height: 40px;
+  border-radius: 20px;
+  border: 0;
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+#submit-el:active{
+  background-color: white;
+  color:hsl(25, 97%, 53%) ;
+}
+
+#error-el{
+  background-color:transparent;
+  color: red;
+  display: none;
+}
+
+/* the thank you page */
+
+#next-page{
+  background-color: aquamarine;
+  width: 250px;
+  background-color:#1f2630;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  border-radius: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  text-align: center;
+  display: none;
+}
+
+#next-page svg{
+  padding: 20px;
+}
+
+#next-page p{
+  color:hsl(217, 12%, 63%);
+}
+
+#next-page h2{
+  font-weight: 300;
+  margin: 20px;
+}
+
+#numberOfStars-el{
+  background-color:#1f2630;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: hsl(25, 89%, 62%);
+}
